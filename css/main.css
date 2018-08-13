@@ -120,12 +120,11 @@ ul {
     background-color: #ffffff;
     font-family: Helvetica;
     font-weight:lighter;
-    border-bottom: 0.1px solid #bbb;
+    border-bottom: 1px solid #bbb;
 }
 li {
     float: left;
     border-right: 1px solid #bbb;
-    border-bottom:1px solid #bbb;
 }
 li b{
     font-weight:bold;
