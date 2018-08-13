@@ -149,8 +149,8 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  color: white;
-    background-color: #111;
+  color: #777777;
+    background-color: #bbbbbb;
 }
 
 /* The Modal (background) */
@@ -235,7 +235,7 @@ input[type=text]:focus {
     width: 100%;
     font-weight:lighter;
 color: #777777;
-  background-color: lightgrey;
+  background-color: #bbbbbb;
 }
 
 
