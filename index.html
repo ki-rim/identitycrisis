@@ -1,6 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="">
 
+
+</div>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,42 +18,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <style>
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    font-family: Helvetica;
-    font-weight:lighter;
-}
-li {
-    float: left;
-    border-right: 1px solid #bbb;
-    border-bottom:1px solid #bbb;
-}
-li:last-child {
-    border-right: none;
-    border-left: 1px solid #bbb;
-}
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  color: white;
-    background-color: #111;
-}
-</style>
+
 </head>
 
 <body>
@@ -59,17 +28,34 @@ li a:hover {
   <![endif]-->
 
   <!-- Add your site or application content here -->
-<ul>
+<ul class="search">
   <li><img src="./img/leaf.png" alt="Leaf" height="50"></li>
-  <li><a href="2">News</a></li>
-  <li><a href="3">Contact</a></li>
-  <li style="float:right"><a href="4">About</a></li>
-</ul>
-<div href="#1">
-  <p>
-    slash p collective
-  </p>
+  <li><b>Leaf</b></li>
+  <!--<li><a href="3">Contact</a></li>-->
+
+  <search style="float:left"><input type="text" placeholder="Find somebody..."></search>
+  <li style="float:right"><a id="myBtn">About</a>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Leaf</h2>
   </div>
+  <div class="modal-body">
+    <p>Leaf is a lightweight social media platform designed to be used a little as possible.<br>It lets you share the information that allows others to get a hold of you in the real world.</p>
+    <p>Reach out to somebody today.</p>
+  </div>
+</div></li>
+</ul>
+
+<div>
+<h1>Jane Doe</h1>
+<p>Wellington<br>0211111111<br>janedoe@mail.com<br>01/01/1991<p>
+  <p>Kia ora friends, thanks for thinking of me! Flick me a text or email and we can organise a date to hang!</p>
+</div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

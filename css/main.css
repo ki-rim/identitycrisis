@@ -96,10 +96,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-p{
-    padding:55px;
-}
 
+h1{
+    font-family: Helvetica, sans-serif;
+text-align:left;
+padding-top:50px;
+padding-left:15px;
+}
+p{
+
+    font-family: Helvetica, sans-serif;
+text-align:left;
+padding-left:15px;
+}
 ul {
     position: fixed;
     top: 0;
@@ -111,11 +120,21 @@ ul {
     background-color: #ffffff;
     font-family: Helvetica;
     font-weight:lighter;
+    border-bottom: 0.1px solid #bbb;
 }
 li {
     float: left;
     border-right: 1px solid #bbb;
     border-bottom:1px solid #bbb;
+}
+li b{
+    font-weight:bold;
+    display: block;
+    color: black;
+    text-align: center;
+  list-style: none;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 li:last-child {
     border-right: none;
@@ -135,11 +154,90 @@ li a:hover {
     background-color: #111;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 150;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */;
+}
+/* The Close Button */
+.close {
+    color: #bbbbbb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    text-align:center;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
 
 
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.search {
+  overflow: hidden;
+  background-color: white;
+  width:100%;
+}
 
 
-
+.search input[type=text] {
+    font-weight:lighter;
+    float: left;
+    padding: 6px;
+    border: 1px solid #bbb;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 17px;
+    width: 130px;
+    -webkit-transition: width 0.7s ease-in-out;
+    transition: width 0.7s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+    font-weight:lighter;
+color: #777777;
+  background-color: lightgrey;
+}
 
 
 
