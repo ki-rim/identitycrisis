@@ -157,7 +157,7 @@ li a:hover {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 8; /* Sit on top */
     left: 0;
     top: 150;
     width: 100%; /* Full width */
@@ -215,6 +215,7 @@ li a:hover {
   overflow: hidden;
   background-color: white;
   width:100%;
+  z-index: 10;
 }
 
 
@@ -237,13 +238,63 @@ input[type=text]:focus {
 color: #777777;
   background-color: #bbbbbb;
 }
+.grid-container {
+  display: grid-column;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding-left: 15px;
+  width: 200px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #bbbbbb;
+  padding: 5px;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
+}
 
+.left {
+    position: fixed;
+    width: 240px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right:1px solid #bbbbbb;
+}
 
+.right {
+    position: absolute;
+    width: auto;
+    left:240px;
+    right: 0;
+    text-align:left;
+}
 
-
-
-
-
+.button {
+    background-color: #bbbbbb;
+    color: white;
+    font-family: Helvetica,sans-serif;
+    font-weight:lighter;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonbox{
+    padding-left:15px;
+    padding-bottom:10px;
+}
+.contact{
+    position:fixed;
+    width:100%;
+    bottom:0;
+    color:#bbbbbb;
+    font-weight:lighter;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
