@@ -96,16 +96,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.pic:hover{
+    background-color: #149144;
+}
 h1{
-    font-family: Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
 text-align:left;
 padding-top:50px;
 padding-left:15px;
 }
 p{
 
-    font-family: Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
 text-align:left;
 padding-left:15px;
 }
@@ -118,8 +120,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
-    font-family: Helvetica;
-    font-weight:lighter;
+    font-family: Montserrat,sans-serif;
+    font-weight:thin;
     border-bottom: 1px solid #bbb;
 }
 li {
@@ -135,6 +137,9 @@ li b{
     padding: 14px 16px;
     text-decoration: none;
 }
+li b:hover{
+    color:#007028;
+}
 li:last-child {
     border-right: none;
     border-left: 1px solid #bbb;
@@ -149,8 +154,8 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  color: #777777;
-    background-color: #bbbbbb;
+    background-color: #149144;
+    color:white;
 }
 
 /* The Modal (background) */
@@ -184,7 +189,7 @@ li a:hover {
 .modal-header {
     padding: 2px 16px;
     background-color: white;
-    color: black;
+    color: #149144;
     text-align:center;
 }
 
@@ -195,7 +200,8 @@ li a:hover {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: white;
+    color:#2cba61;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -220,7 +226,7 @@ li a:hover {
 
 
 .search input[type=text] {
-    font-weight:lighter;
+    font-weight:thin;
     float: left;
     padding: 6px;
     border: 1px solid #bbb;
@@ -234,9 +240,9 @@ li a:hover {
 }
 input[type=text]:focus {
     width: 100%;
-    font-weight:lighter;
+    font-weight:thin;
 color: #777777;
-  background-color: #bbbbbb;
+  background-color: #2cba61;
 }
 .grid-container {
   display: grid-column;
@@ -246,12 +252,16 @@ color: #777777;
   width: 200px;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #bbbbbb;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 5px;
-  font-family: Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 17px;
   text-align: left;
+}
+.grid-item:hover{
+
+    color:#0f4f27;
+  background-color: #2cba61;
 }
 
 .left {
@@ -274,8 +284,8 @@ color: #777777;
 .button {
     background-color: #bbbbbb;
     color: white;
-    font-family: Helvetica,sans-serif;
-    font-weight:lighter;
+    font-family: Montserrat,sans-serif;
+    font-weight:thin;
     padding: 7px;
     text-align: center;
     text-decoration: none;
@@ -283,6 +293,15 @@ color: #777777;
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
+}
+.button:hover{
+    background-color: #149144;
+    color:white;
+}
+.button:active{
+
+    background-color:#2cba61;
+    color:white;
 }
 .buttonbox{
     padding-left:15px;
@@ -292,8 +311,8 @@ color: #777777;
     position:fixed;
     width:100%;
     bottom:0;
-    color:#bbbbbb;
-    font-weight:lighter;
+    color:#2cba61;
+    font-weight:thin;
 }
 /* ==========================================================================
    Helper classes
